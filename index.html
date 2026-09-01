@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#050608"
+    >
+
+    <meta
+        name="description"
+        content="ROBOKRITI 2026 — Inter-Class Robotics Competition at Army Public School, Lal Bahadur Shastri Marg, Lucknow."
+    >
+
+    <title>ROBOKRITI 2026 — Build. Battle. Evolve.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main stylesheet -->
+    <link
+        rel="stylesheet"
+        href="css/main.css"
+    >
+</head>
+
+<body>
+
+<div class="site">
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+
+    <header class="nav" id="site-nav">
+
+        <div class="nav-inner">
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="ROBOKRITI 2026 Home"
+            >
+                <span class="logo-main">ROBOKRITI</span>
+                <span class="logo-year">26</span>
+            </a>
+
+            <nav
+                class="nav-links"
+                aria-label="Main navigation"
+            >
+                <a
+                    href="events.html"
+                    class="nav-link"
+                >
+                    Events
+                </a>
+
+                <a
+                    href="rules.html"
+                    class="nav-link"
+                >
+                    Rules
+                </a>
+
+                <a
+                    href="about.html"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+                <a
+                    href="announcements.html"
+                    class="nav-link"
+                >
+                    Updates
+                </a>
+            </nav>
+
+            <a
+                href="registration.html"
+                class="nav-register"
+            >
+                <span>Register</span>
+                <span>↗</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                <span class="menu-lines">
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MOBILE NAVIGATION
+         ===================================================== -->
+
+    <div
+        class="mobile-menu"
+        id="mobile-menu"
+        aria-hidden="true"
+    >
+
+        <nav class="mobile-menu-links">
+
+            <a
+                href="events.html"
+                class="mobile-menu-link"
+            >
+                Events
+            </a>
+
+            <a
+                href="rules.html"
+                class="mobile-menu-link"
+            >
+                Rules
+            </a>
+
+            <a
+                href="about.html"
+                class="mobile-menu-link"
+            >
+                About
+            </a>
+
+            <a
+                href="announcements.html"
+                class="mobile-menu-link"
+            >
+                Updates
+            </a>
+
+            <a
+                href="registration.html"
+                class="mobile-menu-link"
+            >
+                Register →
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <main>
+
+        <section
+            class="hero"
+            id="hero"
+        >
+
+            <!-- Interactive visual layer -->
+            <div
+                class="hero-visual"
+                aria-hidden="true"
+            >
+
+                <canvas
+                    id="hero-canvas"
+                    class="hero-canvas"
+                ></canvas>
+
+                <div class="hero-grid"></div>
+
+                <div class="hero-orbit">
+                    <div class="hero-orbit-line"></div>
+                </div>
+
+            </div>
+
+
+            <div class="hero-inner">
+
+                <div
+                    class="hero-kicker"
+                    data-reveal="line"
+                >
+                    APS LBS MARG / LUCKNOW
+                    <span>•</span>
+                    INTER-CLASS ROBOTICS COMPETITION
+                </div>
+
+
+                <h1
+                    class="hero-title"
+                    data-reveal
+                >
+
+                    <span class="hero-title-line">
+                        <span class="hero-title-main">
+                            ROBOKRITI
+                        </span>
+                    </span>
+
+                    <span class="hero-year">
+                        2026
+                    </span>
+
+                </h1>
+
+
+                <p
+                    class="hero-tagline"
+                    data-reveal
+                >
+                    BUILD.
+                    <span>BATTLE.</span>
+                    EVOLVE.
+                </p>
+
+
+                <div
+                    class="hero-meta"
+                    data-reveal
+                >
+
+                    <div class="hero-meta-item">
+                        Classes 6–12
+                    </div>
+
+                    <div class="hero-meta-item">
+                        Free Registration
+                    </div>
+
+                    <div class="hero-meta-item">
+                        Event Date — TBA
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="hero-actions"
+                    data-reveal
+                >
+
+                    <a
+                        href="registration.html"
+                        class="button button-primary magnetic"
+                    >
+                        <span>Register Now</span>
+                        <span>↗</span>
+                    </a>
+
+                    <a
+                        href="events.html"
+                        class="button button-secondary magnetic"
+                    >
+                        <span>Explore Events</span>
+                        <span>↓</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Registration countdown -->
+
+            <div
+                class="hero-countdown"
+                data-reveal
+            >
+
+                <div class="countdown-label">
+                    Registration closes
+                </div>
+
+                <div
+                    class="countdown"
+                    id="countdown"
+                    data-deadline="2026-09-06T23:59:59+05:30"
+                >
+
+                    <div class="countdown-unit">
+                        <span
+                            class="countdown-number"
+                            id="countdown-days"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-text">
+                            days
+                        </span>
+                    </div>
+
+                    <div class="countdown-unit">
+                        <span
+                            class="countdown-number"
+                            id="countdown-hours"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-text">
+                            hrs
+                        </span>
+                    </div>
+
+                    <div class="countdown-unit">
+                        <span
+                            class="countdown-number"
+                            id="countdown-minutes"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-text">
+                            min
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             INTRO
+             ================================================= -->
+
+        <section
+            class="section intro"
+            id="about-preview"
+        >
+
+            <div class="section-inner intro-layout">
+
+                <div>
+
+                    <div
+                        class="section-label"
+                        data-reveal
+                    >
+                        01 / The Competition
+                    </div>
+
+                    <h2
+                        class="section-title"
+                        data-reveal
+                    >
+                        BUILD
+                        <em>WHAT</em>
+                        MOVES.
+                    </h2>
+
+                    <p
+                        class="section-copy"
+                        data-reveal
+                    >
+                        ROBOKRITI 2026 is an inter-class robotics
+                        competition for students of Army Public School,
+                        Lal Bahadur Shastri Marg, Lucknow.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="intro-side"
+                    data-reveal
+                >
+
+                    <div class="intro-side-number">
+                        06–12
+                    </div>
+
+                    <p class="intro-side-text">
+                        OPEN TO STUDENTS FROM CLASSES 6 TO 12.
+                        BUILD YOUR MACHINE. TEST YOUR CONTROL.
+                        ENTER THE ARENA.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EVENTS
+             ================================================= -->
+
+        <section
+            class="section events"
+            id="events"
+        >
+
+            <div class="section-inner">
+
+                <div
+                    class="section-label"
+                    data-reveal
+                >
+                    02 / The Arena
+                </div>
+
+                <h2
+                    class="section-title"
+                    data-reveal
+                >
+                    FOUR WAYS
+                    <br>
+                    TO <em>COMPETE.</em>
+                </h2>
+
+
+                <div class="event-list">
+
+                    <a
+                        href="robo-race.html"
+                        class="event-item"
+                        data-reveal
+                    >
+
+                        <span class="event-number">
+                            01
+                        </span>
+
+                        <span class="event-name">
+                            Robo Race
+                        </span>
+
+                        <span class="event-type">
+                            Speed / Precision
+                            <br>
+                            <span class="event-arrow">↗</span>
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="robo-tug-of-war.html"
+                        class="event-item"
+                        data-reveal
+                    >
+
+                        <span class="event-number">
+                            02
+                        </span>
+
+                        <span class="event-name">
+                            Robo Tug of War
+                        </span>
+
+                        <span class="event-type">
+                            Power / Traction
+                            <br>
+                            <span class="event-arrow">↗</span>
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="robo-war.html"
+                        class="event-item"
+                        data-reveal
+                    >
+
+                        <span class="event-number">
+                            03
+                        </span>
+
+                        <span class="event-name">
+                            Robo War
+                        </span>
+
+                        <span class="event-type">
+                            Strategy / Control
+                            <br>
+                            <span class="event-arrow">↗</span>
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="robo-soccer.html"
+                        class="event-item"
+                        data-reveal
+                    >
+
+                        <span class="event-number">
+                            04
+                        </span>
+
+                        <span class="event-name">
+                            Robo Soccer
+                        </span>
+
+                        <span class="event-type">
+                            Rules Coming Soon
+                            <br>
+                            <span class="event-arrow">↗</span>
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             QUICK INFORMATION
+             ================================================= -->
+
+        <section
+            class="section info-strip"
+            id="competition-info"
+        >
+
+            <div class="section-inner">
+
+                <div class="info-grid">
+
+                    <div
+                        class="info-item"
+                        data-reveal
+                    >
+
+                        <div class="info-label">
+                            Eligibility
+                        </div>
+
+                        <div class="info-value">
+                            Classes 6–12
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="info-item"
+                        data-reveal
+                    >
+
+                        <div class="info-label">
+                            Registration
+                        </div>
+
+                        <div class="info-value accent">
+                            Free
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="info-item"
+                        data-reveal
+                    >
+
+                        <div class="info-label">
+                            Deadline
+                        </div>
+
+                        <div class="info-value">
+                            06 SEP
+                            <br>
+                            2026
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="info-item"
+                        data-reveal
+                    >
+
+                        <div class="info-label">
+                            Event Date
+                        </div>
+
+                        <div class="info-value">
+                            TBA
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             RULES PREVIEW
+             ================================================= -->
+
+        <section
+            class="section rules-preview"
+            id="rules-preview"
+        >
+
+            <div class="section-inner rules-layout">
+
+                <div>
+
+                    <div
+                        class="section-label"
+                        data-reveal
+                    >
+                        03 / Rulebook
+                    </div>
+
+                    <h2
+                        class="section-title"
+                        data-reveal
+                    >
+                        KNOW
+                        <em>THE</em>
+                        RULES.
+                    </h2>
+
+                    <p
+                        class="section-copy"
+                        data-reveal
+                    >
+                        Every arena has its own technical rules,
+                        specifications, scoring system and safety
+                        requirements.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="rules-list"
+                    data-reveal
+                >
+
+                    <a
+                        href="robo-race.html"
+                        class="rule-row"
+                    >
+                        <span class="rule-row-name">
+                            Robo Race
+                        </span>
+
+                        <span class="rule-row-status">
+                            Official Rules ↗
+                        </span>
+                    </a>
+
+
+                    <a
+                        href="robo-tug-of-war.html"
+                        class="rule-row"
+                    >
+                        <span class="rule-row-name">
+                            Robo Tug
+                        </span>
+
+                        <span class="rule-row-status">
+                            Official Rules ↗
+                        </span>
+                    </a>
+
+
+                    <a
+                        href="robo-war.html"
+                        class="rule-row"
+                    >
+                        <span class="rule-row-name">
+                            Robo War
+                        </span>
+
+                        <span class="rule-row-status">
+                            Official Rules ↗
+                        </span>
+                    </a>
+
+
+                    <a
+                        href="robo-soccer.html"
+                        class="rule-row"
+                    >
+                        <span class="rule-row-name">
+                            Robo Soccer
+                        </span>
+
+                        <span class="rule-row-status">
+                            Coming Soon
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ANNOUNCEMENTS
+             ================================================= -->
+
+        <section
+            class="section announcements"
+            id="announcements"
+        >
+
+            <div class="section-inner">
+
+                <div
+                    class="section-label"
+                    data-reveal
+                >
+                    04 / Latest
+                </div>
+
+                <h2
+                    class="section-title"
+                    data-reveal
+                >
+                    STAY
+                    <em>IN</em>
+                    SYNC.
+                </h2>
+
+
+                <div
+                    class="announcement-list"
+                    id="announcement-list"
+                >
+
+                    <a
+                        href="announcements.html"
+                        class="announcement"
+                        data-reveal
+                    >
+
+                        <span class="announcement-date">
+                            2026
+                        </span>
+
+                        <span class="announcement-title">
+                            Event date will be announced soon.
+                        </span>
+
+                        <span class="announcement-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="announcements.html"
+                        class="announcement"
+                        data-reveal
+                    >
+
+                        <span class="announcement-date">
+                            06 SEP
+                        </span>
+
+                        <span class="announcement-title">
+                            Registration deadline.
+                        </span>
+
+                        <span class="announcement-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TEAM
+             ================================================= -->
+
+        <section
+            class="section team"
+            id="team"
+        >
+
+            <div class="section-inner">
+
+                <div
+                    class="section-label"
+                    data-reveal
+                >
+                    05 / The Crew
+                </div>
+
+                <h2
+                    class="section-title"
+                    data-reveal
+                >
+                    BEHIND
+                    <br>
+                    THE <em>BATTLE.</em>
+                </h2>
+
+
+                <div class="team-list">
+
+                    <div
+                        class="team-member"
+                        data-reveal
+                    >
+
+                        <span class="team-name">
+                            Kaustubh Shukla
+                        </span>
+
+                        <span class="team-role">
+                            Logistics Incharge
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="team-member"
+                        data-reveal
+                    >
+
+                        <span class="team-name">
+                            Ansh Tiwari
+                        </span>
+
+                        <span class="team-role">
+                            Logistics Incharge
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FINAL CTA
+             ================================================= -->
+
+        <section
+            class="section final-cta"
+            id="register"
+        >
+
+            <div class="section-inner cta-wrap">
+
+                <div
+                    class="section-label"
+                    data-reveal
+                >
+                    06 / Enter The Arena
+                </div>
+
+                <h2
+                    class="cta-title"
+                    data-reveal
+                >
+                    READY TO
+                    <br>
+                    <span>BUILD?</span>
+                </h2>
+
+
+                <div
+                    class="cta-bottom"
+                    data-reveal
+                >
+
+                    <div class="cta-deadline">
+                        Registration closes
+                        <br>
+                        06 September 2026
+                    </div>
+
+                    <a
+                        href="registration.html"
+                        class="button button-primary magnetic"
+                    >
+                        <span>Register Your Team</span>
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-top">
+
+                <div class="footer-brand">
+                    ROBOKRITI
+                    <span style="color: var(--cyan);">
+                        2026
+                    </span>
+                </div>
+
+                <div class="footer-location">
+                    Army Public School
+                    <br>
+                    Lal Bahadur Shastri Marg
+                    <br>
+                    Lucknow
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 ROBOKRITI
+                </span>
+
+                <span>
+                    BUILD. BATTLE. EVOLVE.
+                </span>
+
+                <span>
+                    APS LBS MARG / LUCKNOW
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</div>
+
+
+<!-- =========================================================
+     THREE.JS
+     ========================================================= -->
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+></script>
+
+
+<!-- Main JavaScript -->
+
+<script
+    src="js/main.js"
+    defer
+></script>
+
+</body>
+</html>
